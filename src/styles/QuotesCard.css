@@ -1,0 +1,62 @@
+@keyframes loading {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  padding: 30px 30px 20px;
+  gap: 20px;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#copyBtn {
+  padding: 4px 6px;
+  font-size: 24px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#copyBtn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#author {
+  font-weight: 900;
+}
+
+#loading {
+  width: 80px;
+  height: 80px;
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  border-bottom-color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+  animation: loading 2s forwards infinite linear;
+}

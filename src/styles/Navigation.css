@@ -1,0 +1,63 @@
+.navContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  padding: 20px 30px;
+  gap: 20px 50px;
+  color: white;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.05));
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+}
+
+.shareBtn {
+  display: flex;
+  gap: 20px;
+}
+
+.shareBtn .share {
+  font-size: 30px;
+  color: white;
+}
+
+#new-quote {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#new-quote:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.categoryBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+select {
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+select:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
